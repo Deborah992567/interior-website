@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verve & Verses Home Finds — Luxury Interior Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-v">V&V</span>
+      <span class="logo-text">HOME FINDS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="hero-canvas-wrapper">
+      <canvas id="three-canvas"></canvas>
+      <div id="canvas-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Architectural Visualization</p>
+      <h1 class="hero-title">
+        <em>Where Luxury</em><br />
+        Meets Living
+      </h1>
+      <p class="hero-sub">Immersive interiors crafted with intention.</p>
+      <div class="hero-actions">
+        <a href="#experience" class="btn-primary">Begin Walkthrough</a>
+        <a href="#about" class="btn-ghost">Discover More</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- 3D Controls overlay -->
+    <div id="controls-hint">
+      <div class="ctrl-item"><kbd>Drag</kbd> Orbit</div>
+      <div class="ctrl-item"><kbd>Scroll</kbd> Zoom</div>
+      <div class="ctrl-item"><kbd>Right Drag</kbd> Pan</div>
+    </div>
+  </section>
+
+  <!-- ROOM SELECTOR -->
+  <section id="experience">
+    <div class="section-label">— Interactive Experience</div>
+    <h2 class="section-title">Tour the Villa</h2>
+    <p class="section-sub">Navigate through every crafted space — each room a statement in luxury living.</p>
+
+    <div class="room-nav">
+      <button class="room-btn active" data-room="living">Living Room</button>
+      <button class="room-btn" data-room="kitchen">Kitchen</button>
+      <button class="room-btn" data-room="dining">Dining</button>
+      <button class="room-btn" data-room="bedroom">Bedroom</button>
+      <button class="room-btn" data-room="exterior">Exterior</button>
+    </div>
+
+    <div class="room-info">
+      <div class="room-detail active" id="info-living">
+        <h3>The Living Room</h3>
+        <p>A sanctuary of refined comfort — deep-toned sofas, artisan rugs, and curated accent pieces converge in a space that breathes elegance.</p>
+      </div>
+      <div class="room-detail" id="info-kitchen">
+        <h3>The Kitchen</h3>
+        <p>Culinary artistry meets architectural precision. Walnut island, stone surfaces, and architectural pendant lighting define this chef's haven.</p>
+      </div>
+      <div class="room-detail" id="info-dining">
+        <h3>The Dining Area</h3>
+        <p>Gather around hand-crafted oak and linen, bathed in warm amber light. Every dinner becomes a ceremony.</p>
+      </div>
+      <div class="room-detail" id="info-bedroom">
+        <h3>The Bedroom</h3>
+        <p>Draped in cream linens and warm walnut — a retreat where the architecture itself lulls you toward rest.</p>
+      </div>
+      <div class="room-detail" id="info-exterior">
+        <h3>The Exterior</h3>
+        <p>Modern beige stone, dark wood accents, and curated landscaping. The villa announces itself before you step inside.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-image-block">
+        <div class="about-img-frame">
+          <div class="about-img-inner"></div>
+        </div>
+        <div class="about-stat-card">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="about-text-block">
+        <div class="section-label">— About the Studio</div>
+        <h2 class="section-title">Verve & Verses<br /><em>Home Finds</em></h2>
+        <p class="about-body">We are a luxury interior design studio rooted in the belief that a home is the most personal story you'll ever tell. Every space we craft is a verse — layered, intentional, and deeply human.</p>
+        <p class="about-body">From concept to completion, our studio handles every dimension of your living environment: spatial planning, material curation, bespoke furniture sourcing, and the invisible art of atmospheric light.</p>
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <span>Timeless Aesthetic</span>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <span>Bespoke Craftsmanship</span>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <span>Holistic Approach</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-label">— What We Offer</div>
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="36" height="36" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6 18h36M18 18v24" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="34" cy="32" r="5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Interior Design</h3>
+        <p>Full-scope design from spatial planning to final styling. We transform architecture into inhabited art.</p>
+        <div class="service-num">01</div>
+      </div>
+      <div class="service-card featured">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 36L24 12L40 36H8Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M24 12V36M8 24h32" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Home Styling</h3>
+        <p>Curated object placement, textile layering, and atmospheric styling that elevates any room instantly.</p>
+        <div class="service-num">02</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Design Consultation</h3>
+        <p>Focused advisory sessions for clients who want expert guidance without full project commitment.</p>
+        <div class="service-num">03</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="10" width="32" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 22h16M16 28h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>3D Visualization</h3>
+        <p>Photorealistic renders and interactive walkthroughs before a single piece of furniture is ordered.</p>
+        <div class="service-num">04</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 38L24 10L38 38" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 30h16" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="24" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Furniture Sourcing</h3>
+        <p>Access to an exclusive network of European and local artisan makers, bespoke to your brief.</p>
+        <div class="service-num">05</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 40V20l16-12 16 12v20H8Z" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="18" y="28" width="12" height="12" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Architectural Oversight</h3>
+        <p>Coordination with architects and contractors to ensure every design detail survives the build process.</p>
+        <div class="service-num">06</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-label">— Our Work</div>
+    <h2 class="section-title">Crafted Spaces</h2>
+    <p class="section-sub">A selection of residential projects that define what we mean by luxury living.</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item large" data-project="Lagos Penthouse">
+        <div class="port-img p1"></div>
+        <div class="port-overlay">
+          <span class="port-tag">Residential</span>
+          <h4>Lagos Penthouse</h4>
+          <p>2023 · Interior Design</p>
+        </div>
+      </div>
+      <div class="portfolio-item" data-project="Abuja Villa">
+        <div class="port-img p2"></div>
+        <div class="port-overlay">
+          <span class="port-tag">Villa</span>
+          <h4>Abuja Villa</h4>
+          <p>2023 · Full Scope</p>
+        </div>
+      </div>
+      <div class="portfolio-item" data-project="The Lekki Retreat">
+        <div class="port-img p3"></div>
+        <div class="port-overlay">
+          <span class="port-tag">Retreat</span>
+          <h4>The Lekki Retreat</h4>
+          <p>2022 · Styling</p>
+        </div>
+      </div>
+      <div class="portfolio-item" data-project="Ikoyi Residence">
+        <div class="port-img p4"></div>
+        <div class="port-overlay">
+          <span class="port-tag">Residence</span>
+          <h4>Ikoyi Residence</h4>
+          <p>2022 · Consultation</p>
+        </div>
+      </div>
+      <div class="portfolio-item" data-project="Asokoro Manor">
+        <div class="port-img p5"></div>
+        <div class="port-overlay">
+          <span class="port-tag">Manor</span>
+          <h4>Asokoro Manor</h4>
+          <p>2021 · Interior Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="testi-bg"></div>
+    <div class="section-label light">— What Clients Say</div>
+    <h2 class="section-title light">Beyond Expectations</h2>
+    <div class="testimonial-track">
+      <div class="testimonial active">
+        <blockquote>"Verve & Verses didn't just design our home — they understood our life. Every room feels like it was always meant to be."</blockquote>
+        <cite>— Adaeze O., Lagos</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"The 3D walkthrough alone sold us. By the time construction ended, we already knew every corner by heart."</blockquote>
+        <cite>— Emeka & Fatima C., Abuja</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"Their material sourcing is unmatched. Our dining table came from a Milanese craftsman — no one else would go that far."</blockquote>
+        <cite>— Tunde A., Port Harcourt</cite>
+      </div>
+    </div>
+    <div class="testi-dots">
+      <button class="tdot active" data-t="0"></button>
+      <button class="tdot" data-t="1"></button>
+      <button class="tdot" data-t="2"></button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">— Let's Begin</div>
+        <h2 class="section-title">Start Your<br /><em>Story</em></h2>
+        <p>Every great home begins with a conversation. Tell us about your space, your vision, your life — and we'll craft the rest.</p>
+        <div class="contact-details">
+          <div class="contact-line">
+            <span class="contact-icon">✉</span>
+            <span>hello@verveandverses.com</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-icon">✆</span>
+            <span>+234 901 000 0000</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-icon">⌖</span>
+            <span>Abuja · Lagos · International</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-block">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" placeholder="you@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service Interest</label>
+            <select id="fservice">
+              <option value="">Select a service</option>
+              <option>Interior Design</option>
+              <option>Home Styling</option>
+              <option>Design Consultation</option>
+              <option>3D Visualization</option>
+              <option>Furniture Sourcing</option>
+              <option>Architectural Oversight</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Your Vision</label>
+            <textarea id="fmsg" rows="4" placeholder="Describe your space, goals, or questions…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Enquiry</button>
+        </form>
+        <div id="form-success" class="form-success hidden">
+          <p>Thank you. We'll be in touch within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-v">V&V</span>
+        <span class="logo-text">HOME FINDS</span>
+        <p>Luxury interior design and architectural visualization. Abuja · Lagos · International.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigate</h5>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h5>Services</h5>
+        <a href="#services">Interior Design</a>
+        <a href="#services">Home Styling</a>
+        <a href="#services">Consultation</a>
+        <a href="#services">3D Visualization</a>
+      </div>
+      <div class="footer-social">
+        <h5>Follow</h5>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Pinterest">PI</a>
+          <a href="#" aria-label="Houzz">HZ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Verve & Verses Home Finds. All rights reserved.</p>
+      <p>Crafted with precision & passion.</p>
+    </div>
+  </footer>
+
+  <!-- THREE.JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- OrbitControls via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
